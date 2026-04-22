@@ -1,4 +1,4 @@
-Selection, Model, Train Prediction, Test Prediction, Cross Validation Prediction, Cross Validation std, Best Parameter, Real Test Prediction
+Selection, Model, Train Prediction, Test Prediction, Cross Validation Prediction, Cross Validation std, Best Parameter, F1 Score Prediction,  Real Test Prediction
 P,KNN,0.8377,0.7471,0.7541,0.0239,"{'metric': 'manhattan', 'n_neighbors': 5, 'weights': 'uniform'}",0.8659
 VT,KNN,0.8069,0.7816,0.7752,0.0187,"{'metric': 'manhattan', 'n_neighbors': 11, 'weights': 'uniform'}",0.8774
 KB,KNN,0.8991,0.7931,0.78,0.0372,"{'metric': 'euclidean', 'n_neighbors': 7, 'weights': 'distance'}",0.8697

@@ -17,7 +17,7 @@ python -m venv venv
 
 activate env for windows :
 ```bash
-.venv\Scripts\activate
+venv\Scripts\activate
 ```
 
 3. install the requirements on your Virtual Environment

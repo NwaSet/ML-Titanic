@@ -17,3 +17,9 @@ print(score)
 ```
 
 ## La Suite :
+
+1. Faire La Fin De Titanic = 
+    - correction de F1 Score 
+    - le néttoyage des données dans le PréPrecessing et pas dans l'analyse descriptive.
+    - ajout d'un pipeline pour automatiser le tout
+    - faire un beau fichier xls pour une analyse des données (pas csv, ou alors faire la ligne de début du csv= nom des colonnes).

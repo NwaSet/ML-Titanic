@@ -1,10 +1,2 @@
-Selection, Model, Train Prediction, Test Prediction, Cross Validation Prediction, Cross Validation std, Best Parameter, F1 Score Prediction,  Real Test Prediction
-P,KNN,0.8377,0.7471,0.7541,0.0239,"{'metric': 'manhattan', 'n_neighbors': 5, 'weights': 'uniform'}",0.8659
-VT,KNN,0.8069,0.7816,0.7752,0.0187,"{'metric': 'manhattan', 'n_neighbors': 11, 'weights': 'uniform'}",0.8774
-KB,KNN,0.8991,0.7931,0.78,0.0372,"{'metric': 'euclidean', 'n_neighbors': 7, 'weights': 'distance'}",0.8697
-KB,DT,0.7963,0.8008,0.779,0.0222,"{'criterion': 'gini', 'max_depth': 5, 'min_samples_leaf': 4, 'min_samples_split': 2}",0.8774
-P,DT,0.8453,0.7816,0.7752,0.0194,"{'criterion': 'gini', 'max_depth': 7, 'min_samples_leaf': 1, 'min_samples_split': 5}",0.8927
-VT,DT,0.7963,0.8123,0.7896,0.0064,"{'criterion': 'gini', 'max_depth': 3, 'min_samples_leaf': 1, 'min_samples_split': 2}",0.8966
-KB,RF,0.8501,0.7778,0.7925,0.0206,"{'max_depth': 10, 'min_samples_leaf': 2, 'min_samples_split': 2, 'n_estimators': 50}",0.8736
-P,RF,0.877,0.7969,0.7925,0.0138,"{'max_depth': 10, 'min_samples_leaf': 2, 'min_samples_split': 2, 'n_estimators': 100}",0.8812
-VT,RF,0.9001,0.8199,0.8021,0.032,"{'max_depth': 15, 'min_samples_leaf': 2, 'min_samples_split': 2, 'n_estimators': 200}",0.9004
+Selection, Model, Train Prediction, Test Prediction, Cross Validation Prediction, Cross Validation std, Best Parameter, F1 Score Prediction, Precision, Recall, Custom Test Prediction
+KB,DT,0.7963,0.8008,0.779,0.0222,"{'criterion': 'gini', 'max_depth': 5, 'min_samples_leaf': 4, 'min_samples_split': 2}",0.7204301075268817,0.7701,0.6768,0.8774

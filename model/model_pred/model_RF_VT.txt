@@ -1,0 +1,14 @@
+Synthese - Random Forest + selection Variance Threshold
+
+Le modele Random Forest avec selection Variance Threshold a ete optimise avec le F1-score comme metrique principale.
+Les meilleurs parametres sont : max_depth=15, min_samples_leaf=2, min_samples_split=2, n_estimators=200.
+Accuracy train : `0.9001`, accuracy test : `0.8199`. L'ecart entre le train et le test reste visible, ce qui indique un overfitting modere.
+F1-score test : `0.7565`, precision : `0.7766`, recall : `0.7374`. Le recall est correct : le modele retrouve une bonne partie des survivants.
+F1-score moyen en validation croisee : `0.7243` avec un ecart-type de `0.0334`. L'ecart-type du F1-score en validation croisee reste raisonnable, meme si les performances varient un peu selon les folds.
+La matrice de confusion donne TN=141, FP=21, FN=26, TP=73.
+
+Points a retenir :
+- Metrique principale : F1-score.
+- Le score d'accuracy est utilise comme indicateur secondaire.
+- Le recall indique la capacite a retrouver les survivants.
+- La custom accuracy accepte les faux negatifs selon le choix d'interpretation du projet.

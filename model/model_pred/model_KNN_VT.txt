@@ -1,0 +1,14 @@
+Synthese - KNN + selection Variance Threshold
+
+Le modele KNN avec selection Variance Threshold a ete optimise avec le F1-score comme metrique principale.
+Les meilleurs parametres sont : metric=manhattan, n_neighbors=11, weights=uniform.
+Accuracy train : `0.8069`, accuracy test : `0.7816`. L'ecart entre le train et le test est limite, ce qui indique que l'overfitting est plutot maitrise.
+F1-score test : `0.7016`, precision : `0.7283`, recall : `0.6768`. Le recall est le principal point faible : le modele manque encore trop de survivants.
+F1-score moyen en validation croisee : `0.6949` avec un ecart-type de `0.0398`. L'ecart-type du F1-score en validation croisee reste raisonnable, meme si les performances varient un peu selon les folds.
+La matrice de confusion donne TN=137, FP=25, FN=32, TP=67.
+
+Points a retenir :
+- Metrique principale : F1-score.
+- Le score d'accuracy est utilise comme indicateur secondaire.
+- Le recall indique la capacite a retrouver les survivants.
+- La custom accuracy accepte les faux negatifs selon le choix d'interpretation du projet.

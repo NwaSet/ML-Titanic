@@ -1,0 +1,14 @@
+Synthese - Random Forest + selection Personnel
+
+Le modele Random Forest avec selection Personnel a ete optimise avec le F1-score comme metrique principale.
+Les meilleurs parametres sont : max_depth=5, min_samples_leaf=1, min_samples_split=5, n_estimators=100.
+Accuracy train : `0.8079`, accuracy test : `0.7931`. Les scores train et test sont tres proches, ce qui indique que l'overfitting est limite.
+F1-score test : `0.7128`, precision : `0.7528`, recall : `0.6768`. Le recall est le principal point faible : le modele manque encore trop de survivants.
+F1-score moyen en validation croisee : `0.7081` avec un ecart-type de `0.0414`. L'ecart-type du F1-score en validation croisee est plus eleve, ce qui montre une stabilite moins reguliere selon les folds.
+La matrice de confusion donne TN=140, FP=22, FN=32, TP=67.
+
+Points a retenir :
+- Metrique principale : F1-score.
+- Le score d'accuracy est utilise comme indicateur secondaire.
+- Le recall indique la capacite a retrouver les survivants.
+- La custom accuracy accepte les faux negatifs selon le choix d'interpretation du projet.

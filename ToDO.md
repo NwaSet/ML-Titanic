@@ -29,3 +29,6 @@ print(score)
 - deux frames 
     - glisser déposée
     - analyses des résultats, choix meilleur model + demander le résultats d'une nouvelle ligne.
+
+# urgent !!!!!!!!!
+corriger le préprocessing et mettre le sex dans catégoriel !!!!!!!!!!!!!!!!!!!!!!!

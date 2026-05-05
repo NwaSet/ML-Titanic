@@ -10,15 +10,21 @@ Building a complete model for the Titanic dataset to predict whether a passenger
 git clone https://github.com/NwaSet/AIProject
 ```
 
+---
+
 2. create a Virtual Environment 
 ```bash
 python -m venv venv
 ```
 
-activate env for windows :
+---
+
+activate venv  :
 ```bash
 venv\Scripts\activate
 ```
+
+---
 
 3. install the requirements on your Virtual Environment
 ```bash

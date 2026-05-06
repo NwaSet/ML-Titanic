@@ -1,4 +1,4 @@
-from .const import DATA_PATH
+from const import DATA_PATH
 
 import pandas
 

@@ -1,5 +1,5 @@
 DATA_PATH = "data/Titanic Dataset.csv"
-MODEL_PATH = "pipelin/outputs/best_model.joblib"
+MODEL_PATH = "pipeline/outputs/best_model.joblib"
 
 TARGET = "survived"
 

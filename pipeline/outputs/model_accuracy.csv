@@ -1,0 +1,10 @@
+Selection,Model,Train Accuracy,Test Accuracy,CV Accuracy Mean,CV Accuracy Std,CV F1 Mean,CV F1 Std,F1 Score,Precision,Recall,Custom Accuracy,Best Parameters
+P,DT,0.8405,0.7241,0.7867,0.0294,0.7222,0.0395,0.6,0.6667,0.5455,0.8966,"{'criterion': 'entropy', 'max_depth': 7, 'min_samples_leaf': 1, 'min_samples_split': 2}"
+P,KNN,0.9702,0.7778,0.781,0.0176,0.706,0.0249,0.6979,0.7204,0.6768,0.9004,"{'metric': 'manhattan', 'n_neighbors': 11, 'weights': 'distance'}"
+P,RF,0.8905,0.7854,0.8194,0.0342,0.7528,0.0455,0.7053,0.7363,0.6768,0.908,"{'max_depth': None, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}"
+VT,DT,0.8261,0.7854,0.8155,0.0272,0.7453,0.0316,0.6989,0.7471,0.6566,0.9157,"{'criterion': 'entropy', 'max_depth': 5, 'min_samples_leaf': 2, 'min_samples_split': 10}"
+VT,KNN,0.8549,0.7816,0.7992,0.0248,0.7293,0.0349,0.7164,0.7059,0.7273,0.8851,"{'metric': 'manhattan', 'n_neighbors': 5, 'weights': 'uniform'}"
+VT,RF,0.8915,0.8046,0.8318,0.0352,0.7671,0.0487,0.7385,0.75,0.7273,0.908,"{'max_depth': 15, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 100}"
+KB,DT,0.8031,0.7931,0.803,0.0391,0.7223,0.0566,0.7065,0.7647,0.6566,0.9234,"{'criterion': 'gini', 'max_depth': 3, 'min_samples_leaf': 1, 'min_samples_split': 2}"
+KB,KNN,0.9068,0.7854,0.8011,0.0211,0.718,0.0389,0.6989,0.7471,0.6566,0.9157,"{'metric': 'manhattan', 'n_neighbors': 9, 'weights': 'distance'}"
+KB,RF,0.8972,0.7778,0.8021,0.022,0.7284,0.0345,0.6947,0.7253,0.6667,0.9042,"{'max_depth': 10, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 50}"

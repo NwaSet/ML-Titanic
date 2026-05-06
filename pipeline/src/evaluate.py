@@ -1,5 +1,3 @@
-import pandas
-
 from sklearn.model_selection import cross_val_score
 from sklearn.metrics import (
     accuracy_score,
@@ -10,28 +8,40 @@ from sklearn.metrics import (
 )
 
 
-def evaluate_model(model, X_train, X_test, y_train, y_test, selection_name, model_name):
+def evaluate_model(
+        model,
+        X_train,
+        X_test,
+        y_train,
+        y_test,
+        selection_name,
+        model_name,
+        cv_accuracy_scores=None,
+        cv_f1_scores=None
+        ):
     y_train_array = y_train.values.ravel()
     y_test_array = y_test.values.ravel()
 
     y_train_pred = model.predict(X_train)
     y_test_pred = model.predict(X_test)
 
-    cv_accuracy_scores = cross_val_score(
-        model,
-        X_train,
-        y_train_array,
-        cv=5,
-        scoring="accuracy"
-    )
+    if cv_accuracy_scores is None:
+        cv_accuracy_scores = cross_val_score(
+            model,
+            X_train,
+            y_train_array,
+            cv=5,
+            scoring="accuracy"
+        )
 
-    cv_f1_scores = cross_val_score(
-        model,
-        X_train,
-        y_train_array,
-        cv=5,
-        scoring="f1"
-    )
+    if cv_f1_scores is None:
+        cv_f1_scores = cross_val_score(
+            model,
+            X_train,
+            y_train_array,
+            cv=5,
+            scoring="f1"
+        )
 
     tn, fp, fn, tp = confusion_matrix(y_test_array, y_test_pred).ravel()
 

@@ -78,7 +78,7 @@ Le modele presente un ecart entre le train et le test (`0.9001` contre `0.8199`)
 Les meilleurs scores F1 observes sont :
 
 | Selection | Modele | Accuracy test | F1-score | Precision | Recall |
-|---|---:|---:|---:|---:|---:|
+|---|:---:|:---:|:---:|:---:|:---:|
 | VT | RF | 0.8199 | 0.7565 | 0.7766 | 0.7374 |
 | VT | DT | 0.8123 | 0.7461 | 0.7660 | 0.7273 |
 | P | DT | 0.8046 | 0.7385 | 0.7500 | 0.7273 |
